@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <section name="plugin" type="EFWCoreLib.CoreFrame.Plugin.PluginSectionHandler, EFWCoreLib" />
+  </configSections>
+  <unity>
+    <container>
+    </container>
+  </unity>
+  <plugin name="Books_Winform" version="1.0" title="Books实例(Winform版)" author="kakake" plugintype="Winform" defaultdbkey="SQL2005" defaultcachekey="Cache Manager" isentry="1">
+    <baseinfo>
+      <data key="introduction" value="演示Winform版框架“增删改查”的一个实例（包含源代码）" />
+      <data key="updaterecord" value="" />
+      <data key="headpic" value="/ModulePlugin/efwplus_website/headpic/default.png" />
+      <data key="StartItem" value="bookController" />
+    </baseinfo>
+    <businessinfo>
+      <dll name="Books_Winform.dll" version="1.0" />
+      <dll name="Books_Winform.Winform.dll" version="1.0" />
+    </businessinfo>
+    <issue>
+      <add type="dir" path="dll" source="" />
+      <add type="file" path="dll/Books_Winform.dll" source="../../Books_Winform.dll" />
+      <add type="file" path="dll/Books_Winform.Winform.dll" source="../../Books_Winform.Winform.dll" />
+      <add type="file" path="plugin.xml" source="" />
+      <add type="dir" path="Books_Winform" source="" />
+      <add type="dir" path="Books_Winform.Winform" source="" />
+      <add type="dir" path="EFWWin" source="" />
+      <add type="file" path="EFW_Books_Winform.sln" source="" />
+    </issue>
+    <setup>
+      <add type="file" path="dll/Books_Winform.dll" copyto="../../Books_Winform.dll" />
+      <add type="file" path="dll/Books_Winform.Winform.dll" copyto="../../Books_Winform.Winform.dll" />
+    </setup>
+    <menus>
+      <add menuname="书籍管理" pluginname="Books_Winform" controllername="bookController" viewname="" menupath="" memo="" />
+    </menus>
+  </plugin>
+</configuration>

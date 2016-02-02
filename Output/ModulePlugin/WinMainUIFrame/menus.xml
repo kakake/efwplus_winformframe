@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sysmenu>
+  <modules>
+    <module ModuleId="2" Name="系统设置管理">
+    </module>
+    <module ModuleId="11" Name="efwplus实例">
+    </module>
+  </modules>
+  <menus>
+    <menu ModuleId="2" MenuId="1" PMenuId="-1" Name="人员部门" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="2" MenuId="2" PMenuId="1" Name="机构管理" DllName="WinMainUIFrame" FunName="EmpUserController|frmWorker" MenuToolBar="0" MenuLookBar="0" Image="images/机构.png" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="2" MenuId="3" PMenuId="1" Name="人员部门管理" DllName="WinMainUIFrame" FunName="EmpUserController" MenuToolBar="0" MenuLookBar="0" Image="images/人员科室管理.png" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="2" MenuId="4" PMenuId="-1" Name="权限设置" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="2" MenuId="5" PMenuId="4" Name="系统菜单管理" DllName="WinMainUIFrame" FunName="RightController" MenuToolBar="0" MenuLookBar="0" Image="images/菜单设置.png" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="2" MenuId="6" PMenuId="4" Name="用户权限管理" DllName="WinMainUIFrame" FunName="RightController|frmGroupMenu" MenuToolBar="0" MenuLookBar="0" Image="images/用户角色.png" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="11" MenuId="7" PMenuId="-1" Name="实例程序" DllName="" FunName="" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="11" MenuId="9" PMenuId="7" Name="WinTest01" DllName="WinTest01" FunName="from1winController" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="">
+    </menu>
+    <menu ModuleId="11" MenuId="10" PMenuId="7" Name="WinRight01" DllName="WinRight01" FunName="from1winController" MenuToolBar="0" MenuLookBar="0" Image="" UrlId="" UrlName="">
+    </menu>
+  </menus>
+</sysmenu>

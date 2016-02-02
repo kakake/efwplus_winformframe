@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <mainStyle value="1">
+  </mainStyle>
+  <inputMethod CH="1" EN="0">
+  </inputMethod>
+  <displayWay value="1">
+  </displayWay>
+  <printer first="0" second="0" three="0">
+  </printer>
+  <message runaccept="0">
+  </message>
+  <backgroundimage path="images\backgroundImage.jpg">
+  </backgroundimage>
+</root>

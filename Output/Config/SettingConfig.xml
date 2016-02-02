@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <hostname value="wcf">
+  </hostname>
+  <debug value="1">
+  </debug>
+  <wcfservice value="1">
+  </wcfservice>
+  <router value="0">
+  </router>
+  <heartbeat value="1">
+  </heartbeat>
+</root>

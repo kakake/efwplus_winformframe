@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pluginsys>
+  <WebComponentPlugin>
+  </WebComponentPlugin>
+  <WebModulePlugin>
+  </WebModulePlugin>
+  <WinformModulePlugin EntryPlugin="WinMainUIFrame" EntryController="LoginController">
+    <Plugin name="WinMainUIFrame" path="ModulePlugin/WinMainUIFrame/plugin.xml" title="Winform通用权限管理" isdevelopment="1" />
+    <Plugin name="Books_Winform" path="ModulePlugin/Books_Winform/plugin.xml" title="Books_Winform" isdevelopment="1" />
+  </WinformModulePlugin>
+</pluginsys>

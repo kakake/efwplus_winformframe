@@ -1,0 +1,88 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "appconfig", "appconfig", "{CD4862E8-A561-43E2-9D5A-C738CC457522}"
+	ProjectSection(SolutionItems) = preProject
+		WinMainUIFrame\EFWWin\App.config = WinMainUIFrame\EFWWin\App.config
+		Output\Config\EntLib.config = Output\Config\EntLib.config
+		Output\Config\pluginsys.xml = Output\Config\pluginsys.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFWWin", "WinMainUIFrame\EFWWin\EFWWin.csproj", "{A2AB1FB2-FB8B-4048-893B-E76B51847103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinMainUIFrame", "WinMainUIFrame\WinMainUIFrame\WinMainUIFrame.csproj", "{D780897A-2D34-4830-B98E-EED04DFC8ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinMainUIFrame.Winform", "WinMainUIFrame\WinMainUIFrame.Winform\WinMainUIFrame.Winform.csproj", "{1932A78B-7D0A-4C2F-9855-AFB43C327C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfwControls", "WinMainUIFrame\EfwControls\EfwControls.csproj", "{A7618987-492B-4D5D-92C2-0381EC45817F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFWCoreLib", "EFWCoreLib\EFWCoreLib.csproj", "{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pluginconfig", "pluginconfig", "{10C76249-8B47-4408-B6D3-035262C2A8F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "winmainuiframe", "winmainuiframe", "{C8570252-6195-4293-951F-FF0FF57D8E23}"
+	ProjectSection(SolutionItems) = preProject
+		Output\ModulePlugin\WinMainUIFrame\menus.xml = Output\ModulePlugin\WinMainUIFrame\menus.xml
+		Output\ModulePlugin\WinMainUIFrame\plugin.xml = Output\ModulePlugin\WinMainUIFrame\plugin.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "实例Books", "实例Books", "{42FC1182-0D68-4F1F-8D44-8D167301DA78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books_Winform.Winform", "实例Books\Books_Winform.Winform\Books_Winform.Winform.csproj", "{805801E8-6F2C-497B-89CA-9CD76A860110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Books_Winform", "实例Books\Books_Winform\Books_Winform.csproj", "{519FBBA4-5910-4195-B3F0-A4B8C718A3A4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "books", "books", "{70EE9B2F-A45E-415C-9157-876F6354F3B8}"
+	ProjectSection(SolutionItems) = preProject
+		Output\ModulePlugin\Books_Winform\plugin.xml = Output\ModulePlugin\Books_Winform\plugin.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScript", "SqlScript", "{F0D399E3-7F79-4F81-9AB1-58BF2C514B5F}"
+	ProjectSection(SolutionItems) = preProject
+		SqlScript\createtables.sql = SqlScript\createtables.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2AB1FB2-FB8B-4048-893B-E76B51847103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2AB1FB2-FB8B-4048-893B-E76B51847103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2AB1FB2-FB8B-4048-893B-E76B51847103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2AB1FB2-FB8B-4048-893B-E76B51847103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D780897A-2D34-4830-B98E-EED04DFC8ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D780897A-2D34-4830-B98E-EED04DFC8ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D780897A-2D34-4830-B98E-EED04DFC8ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D780897A-2D34-4830-B98E-EED04DFC8ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1932A78B-7D0A-4C2F-9855-AFB43C327C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1932A78B-7D0A-4C2F-9855-AFB43C327C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1932A78B-7D0A-4C2F-9855-AFB43C327C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1932A78B-7D0A-4C2F-9855-AFB43C327C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7618987-492B-4D5D-92C2-0381EC45817F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7618987-492B-4D5D-92C2-0381EC45817F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7618987-492B-4D5D-92C2-0381EC45817F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7618987-492B-4D5D-92C2-0381EC45817F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805801E8-6F2C-497B-89CA-9CD76A860110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805801E8-6F2C-497B-89CA-9CD76A860110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805801E8-6F2C-497B-89CA-9CD76A860110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805801E8-6F2C-497B-89CA-9CD76A860110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519FBBA4-5910-4195-B3F0-A4B8C718A3A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519FBBA4-5910-4195-B3F0-A4B8C718A3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519FBBA4-5910-4195-B3F0-A4B8C718A3A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519FBBA4-5910-4195-B3F0-A4B8C718A3A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8570252-6195-4293-951F-FF0FF57D8E23} = {10C76249-8B47-4408-B6D3-035262C2A8F3}
+		{70EE9B2F-A45E-415C-9157-876F6354F3B8} = {10C76249-8B47-4408-B6D3-035262C2A8F3}
+		{805801E8-6F2C-497B-89CA-9CD76A860110} = {42FC1182-0D68-4F1F-8D44-8D167301DA78}
+		{519FBBA4-5910-4195-B3F0-A4B8C718A3A4} = {42FC1182-0D68-4F1F-8D44-8D167301DA78}
+	EndGlobalSection
+EndGlobal

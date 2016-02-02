@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <section name="plugin" type="EFWCoreLib.CoreFrame.Plugin.PluginSectionHandler, EFWCoreLib" />
+  </configSections>
+  <unity>
+    <container>
+    </container>
+  </unity>
+  <plugin name="WinMainUIFrame" version="1.2" title="Winform通用权限管理" author="kakake" plugintype="Winform" defaultdbkey="SQL2005" defaultcachekey="Cache Manager" isentry="1">
+    <baseinfo>
+      <data key="introduction" value="这是一个Winform通用权限框架插件程序" />
+      <data key="updaterecord" value="无" />
+      <data key="headpic" value="/ModulePlugin/efwplus_website/headpic/default.png" />
+      <data key="StartItem" value="LoginController" />
+      <data key="SystemName" value="企业管理系统" />
+      <data key="LoginBackgroundImage" value="images\\login.JPG" />
+      <data key="WEB_serverUrl" value="http://localhost:51796/" />
+      <data key="isdebug" value="false" />
+      <data key="menuconfig" value="ModulePlugin\WinMainUIFrame\menus.xml" />
+      <data key="LoginCompleted" value="" />
+    </baseinfo>
+    <businessinfo>
+      <dll name="EfwControls.dll" version="1.0" />
+      <dll name="WinMainUIFrame.dll" version="1.0" />
+      <dll name="WinMainUIFrame.Winform.dll" version="1.0" />
+    </businessinfo>
+    <issue>
+      <add type="dir" path="dll" source="" />
+      <add type="dir" path="SqlScript" source="" />
+      <add type="file" path="dll/WinMainUIFrame.dll" source="../../WinMainUIFrame.dll" />
+      <add type="file" path="dll/WinMainUIFrame.Winform.dll" source="../../WinMainUIFrame.Winform.dll" />
+      <add type="file" path="dll/EfwControls.dll" source="../../EfwControls.dll" />
+      <add type="file" path="plugin.xml" source="" />
+      <add type="file" path="menus.xml" source="" />
+    </issue>
+    <setup>
+      <add type="file" path="dll/WinMainUIFrame.dll" copyto="../../WinMainUIFrame.dll" />
+      <add type="file" path="dll/WinMainUIFrame.Winform.dll" copyto="../../WinMainUIFrame.Winform.dll" />
+      <add type="file" path="dll/EfwControls.dll" copyto="../../EfwControls.dll" />
+      <add type="sql" path="SqlScript/createtables.sql" copyto="" />
+    </setup>
+    <menus>
+      <add menuname="启动程序登录" pluginname="WinMainUIFrame" controllername="LoginController" viewname="" menupath="" memo="在pluginsys.xml指定此菜单" />
+      <add menuname="机构管理" pluginname="WinMainUIFrame" controllername="EmpUserController" viewname="frmWorker" menupath="" memo="" />
+      <add menuname="人员部门管理" pluginname="WinMainUIFrame" controllername="EmpUserController" viewname="" menupath="" memo="" />
+      <add menuname="系统菜单管理" pluginname="WinMainUIFrame" controllername="RightController" viewname="" menupath="" memo="" />
+      <add menuname="用户权限管理" pluginname="WinMainUIFrame" controllername="RightController" viewname="frmGroupMenu" menupath="" memo="" />
+    </menus>
+  </plugin>
+</configuration>

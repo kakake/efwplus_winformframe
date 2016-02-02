@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C5A8C124-18C0-43F4-B5A2-0F71BB833E82}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFWCoreLib</RootNamespace>
+    <AssemblyName>EFWCoreLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WinfromFrame</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\Output\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\Output\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\Output\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling">
+      <HintPath>..\Output\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging">
+      <HintPath>..\Output\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\Output\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.PolicyInjection">
+      <HintPath>..\Output\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\Output\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\Output\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\Output\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\Output\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Output\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Output\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoreFrame\Business\AbstractBusines.cs" />
+    <Compile Include="CoreFrame\Business\AbstractController.cs" />
+    <Compile Include="CoreFrame\Business\AbstractObjectModel.cs" />
+    <Compile Include="CoreFrame\Business\BaseFormBusiness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\Business\BaseFormBusiness.Designer.cs">
+      <DependentUpon>BaseFormBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoreFrame\Business\IBaseViewBusiness.cs" />
+    <Compile Include="CoreFrame\Init\AttributeManager\WcfControllerManager.cs" />
+    <Compile Include="CoreFrame\Init\AttributeManager\WebControllerManager.cs" />
+    <Compile Include="CoreFrame\Init\AttributeManager\WebServicesManager.cs" />
+    <Compile Include="CoreFrame\Init\AttributeManager\WinformControllerManager.cs" />
+    <Compile Include="CoreFrame\Init\FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\ORM\Attribute\ColumnAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\ORM\Attribute\RelationName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\ORM\Attribute\TableAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\ORM\DbOrmAnalysis\DB2OrmAnalysis.cs" />
+    <Compile Include="CoreFrame\ORM\DbOrmAnalysis\MsAccessOrmAnalysis.cs" />
+    <Compile Include="CoreFrame\ORM\DbOrmAnalysis\MySqlOrmAnalysis.cs" />
+    <Compile Include="CoreFrame\ORM\DbOrmAnalysis\OracleOrmAnalysis.cs" />
+    <Compile Include="CoreFrame\Common\BarCodeHook.cs" />
+    <Compile Include="CoreFrame\Common\CodeBarInput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\Common\ExcelHelper.cs" />
+    <Compile Include="CoreFrame\DbProvider\EntLibDb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\Init\ExecuteFun.cs" />
+    <Compile Include="CoreFrame\Init\GlobalExtend.cs" />
+    <Compile Include="CoreFrame\Init\MultiTask.cs" />
+    <Compile Include="CoreFrame\Init\AttributeManager\EntityManager.cs" />
+    <Compile Include="CoreFrame\Init\AppPluginManage.cs" />
+    <Compile Include="CoreFrame\ORM\SqlMapper.cs" />
+    <Compile Include="CoreFrame\Plugin\ModulePlugin.cs" />
+    <Compile Include="CoreFrame\Plugin\PluginConfig.cs" />
+    <Compile Include="CoreFrame\Plugin\PluginSectionHandler.cs" />
+    <Compile Include="CoreFrame\Plugin\PluginSysManage.cs" />
+    <Compile Include="CoreFrame\SSO\AuthResult.cs" />
+    <Compile Include="CoreFrame\SSO\ConvertHelper.cs" />
+    <Compile Include="CoreFrame\SSO\SsoHelper.cs" />
+    <Compile Include="CoreFrame\SSO\TokenInfo.cs" />
+    <Compile Include="CoreFrame\SSO\TokenManager.cs" />
+    <Compile Include="CoreFrame\SSO\UserInfo.cs" />
+    <Compile Include="CoreFrame\SSO\Utility.cs" />
+    <Compile Include="CoreFrame\Business\AbstractDao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\Business\AbstractEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\Business\AbstractService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CoreFrame\Business\FactoryModel.cs" />
+    <Compile Include="CoreFrame\Business\Interface\IBindDb.cs" />
+    <Compile Include="CoreFrame\Business\Interface\INewDao.cs" />
+    <Compile Include="CoreFrame\Business\Interface\INewObject.cs" />
+    <Compile Include="CoreFrame\ORM\Interface\IORM.cs" />
+    <Compile Include="CoreFrame\ORM\OrmAnalysis.cs" />
+    <Compile Include="CoreFrame\ORM\OrmAnalysisFactory.cs" />
+    <Compile Include="CoreFrame\ORM\DbOrmAnalysis\SqlServerOrmAnalysis.cs" />
+    <Compile Include="CoreFrame\Business\SysLoginRight.cs" />
+    <Compile Include="CoreFrame\Common\ConvertExtend.cs" />
+    <Compile Include="CoreFrame\Common\DESEncryptor.cs" />
+    <Compile Include="CoreFrame\Common\ExtendMethod.cs" />
+    <Compile Include="CoreFrame\Common\SpellAndWbCode.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\CollectionConverter.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\CollectionHelper.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\Delegates.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\EnumDescription.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\ITimingTaskExcuter.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\Time\Date.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\Time\DateScope.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\Time\DateTimeScope.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\Time\ShortTime.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\Time\ShortTimeScope.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\Time\TimeHelper.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\Time\Week.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\TimingTask.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\TimingTaskManager.cs" />
+    <Compile Include="CoreFrame\Common\TimingTask\TimingTaskType.cs" />
+    <Compile Include="CoreFrame\DbProvider\AbstractDatabase.cs" />
+    <Compile Include="CoreFrame\DbProvider\FactoryDatabase.cs" />
+    <Compile Include="CoreFrame\DbProvider\SqlPagination\PageInfo.cs" />
+    <Compile Include="CoreFrame\DbProvider\SqlPagination\SqlPage.cs" />
+    <Compile Include="CoreFrame\DbProvider\Transaction\AopTransaction.cs" />
+    <Compile Include="CoreFrame\EntLib\Aop\AopCallHandler.cs" />
+    <Compile Include="CoreFrame\EntLib\Aop\aopCallHandlerAttribute.cs" />
+    <Compile Include="CoreFrame\EntLib\Aop\IAopOperator.cs" />
+    <Compile Include="CoreFrame\EntLib\Caching\CacheHelper.cs" />
+    <Compile Include="CoreFrame\EntLib\Log\AopTrace.cs" />
+    <Compile Include="CoreFrame\EntLib\Log\Constants.cs" />
+    <Compile Include="CoreFrame\EntLib\Log\Formatters\CustomTextFormatter.cs" />
+    <Compile Include="CoreFrame\EntLib\Log\Formatters\XmlFormatter.cs" />
+    <Compile Include="CoreFrame\EntLib\Log\LogHelper.cs" />
+    <Compile Include="CoreFrame\EntLib\Log\TraceListeners\ConsoleTraceListener.cs" />
+    <Compile Include="CoreFrame\EntLib\Log\TraceListeners\DatabaseTraceListener.cs" />
+    <Compile Include="CoreFrame\EntLib\Log\TraceListeners\FileTraceListener.cs" />
+    <Compile Include="CoreFrame\EntLib\ZhyContainer.cs" />
+    <Compile Include="CoreFrame\Init\AppGlobal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CoreFrame\Business\BaseFormBusiness.resx">
+      <DependentUpon>BaseFormBusiness.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoreFrame\Init\FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinformFrame\Controller\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="CoreFrame\Business\AttributeInfo\WebControllerAttribute.cs" />
+    <Compile Include="CoreFrame\Business\AttributeInfo\WebMethodAttribute.cs" />
+    <Compile Include="CoreFrame\Business\AttributeInfo\WinformControllerAttribute.cs" />
+    <Compile Include="CoreFrame\Business\AttributeInfo\WinformMethodAttribute.cs" />
+    <Compile Include="CoreFrame\Business\AttributeInfo\WinformViewAttribute.cs" />
+    <Compile Include="CoreFrame\Business\AttributeInfo\WCFControllerAttribute.cs" />
+    <Compile Include="CoreFrame\Business\AttributeInfo\WCFMethodAttribute.cs" />
+    <Compile Include="WinformFrame\Controller\ControllerHelper.cs" />
+    <Compile Include="WinformFrame\Controller\WinformController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WinformFrame\Controller\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinformFrame\Controller\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinformFrame\Controller\IBaseView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CoreFrame\Common\Resources\CodeConfig.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
