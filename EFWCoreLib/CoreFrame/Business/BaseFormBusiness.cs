@@ -41,7 +41,18 @@ namespace EFWCoreLib.CoreFrame.Business
                 _InvokeController = value;
             }
         }
-
+        private string _frmName;
+        public string frmName
+        {
+            get
+            {
+                return _frmName;
+            }
+            set
+            {
+                _frmName = value;
+            }
+        }
         #endregion
 
 

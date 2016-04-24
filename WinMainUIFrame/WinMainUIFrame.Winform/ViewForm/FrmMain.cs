@@ -194,7 +194,7 @@ namespace WinMainUIFrame.Winform.ViewForm
         {
             this.Text = WorkName;
 
-            //InitMessageForm();
+            InitMessageForm();
         }
 
         //工具栏菜单点击事件
@@ -293,7 +293,7 @@ namespace WinMainUIFrame.Winform.ViewForm
         private void 消息面板ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //InvokeController("ShowMessageForm");
-            //ShowMessageForm();
+            ShowMessageForm();
         }
 
         private void 主界面ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -516,29 +516,29 @@ namespace WinMainUIFrame.Winform.ViewForm
         private void btnMessage_Click(object sender, EventArgs e)
         {
             //InvokeController("ShowMessageForm");
-            //ShowMessageForm();
+            ShowMessageForm();
         }
 
-        //MessageTimer mstimer = null;//消息提醒触发器
-        //public void InitMessageForm()
-        //{
-        //    if (mstimer != null)
-        //    {
-        //        mstimer.Enabled = false;
-        //        if (TaskbarForm.instance != null)
-        //            TaskbarForm.instance.ClearMessages();
-        //    }
+        MessageTimer mstimer = null;//消息提醒触发器
+        public void InitMessageForm()
+        {
+            if (mstimer != null)
+            {
+                mstimer.Enabled = false;
+                if (TaskbarForm.instance != null)
+                    TaskbarForm.instance.ClearMessages();
+            }
 
-        //    mstimer = new MessageTimer();
-        //    mstimer.FrmMain =this;
-        //    //mstimer.Interval = 20000;
-        //    mstimer.Enabled = true;
-        //}
+            mstimer = new MessageTimer();
+            mstimer.FrmMain = this;
+            //mstimer.Interval = 20000;
+            mstimer.Enabled = true;
+        }
 
-        //public void ShowMessageForm()
-        //{
-        //    TaskbarForm.ShowForm(this);
-        //}
+        public void ShowMessageForm()
+        {
+            TaskbarForm.ShowForm(this);
+        }
 
 
         #region IfrmMain 成员
@@ -562,5 +562,15 @@ namespace WinMainUIFrame.Winform.ViewForm
         {
             
         }
+
+        #region IBaseViewBusiness 成员
+
+        public string frmName
+        {
+            get;
+            set;
+        }
+
+        #endregion
     }
 }

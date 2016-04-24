@@ -185,6 +185,13 @@
     <Compile Include="ViewForm\FrmWeclome.Designer.cs">
       <DependentUpon>FrmWeclome.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewForm\Messages.cs" />
+    <Compile Include="ViewForm\MessageTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewForm\MessageTimer.Designer.cs">
+      <DependentUpon>MessageTimer.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewForm\ReDept.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +221,12 @@
     </Compile>
     <Compile Include="ViewForm\RightManager\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewForm\TaskbarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewForm\TaskbarForm.Designer.cs">
+      <DependentUpon>TaskbarForm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -268,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ViewForm\RightManager\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewForm\TaskbarForm.resx">
+      <DependentUpon>TaskbarForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

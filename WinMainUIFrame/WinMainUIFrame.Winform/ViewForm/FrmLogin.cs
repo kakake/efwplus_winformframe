@@ -41,7 +41,10 @@ namespace WinMainUIFrame.Winform.ViewForm
                 }
                 catch (Exception err)
                 {
-                    MessageBoxEx.Show(err.InnerException.Message, "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (err.InnerException != null)
+                        MessageBoxEx.Show(err.InnerException.Message, "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                        MessageBoxEx.Show(err.Message, "登录提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

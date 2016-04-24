@@ -190,11 +190,15 @@ namespace EFWCoreLib.WcfFrame.ClientController
             {
                 using (var scope = new OperationContextScope(mWcfService as IContextChannel))
                 {
-                    var router = System.ServiceModel.Channels.MessageHeader.CreateHeader("routerID", "http://www.efwplus.cn/", AppGlobal.cache.GetData("routerID").ToString());
-                    OperationContext.Current.OutgoingMessageHeaders.Add(router);
-                    var cmd = System.ServiceModel.Channels.MessageHeader.CreateHeader("CMD", "http://www.efwplus.cn/", "Quit");
-                    OperationContext.Current.OutgoingMessageHeaders.Add(cmd);
-                    b = mWcfService.UnDomain(mClientID);
+                    try
+                    {
+                        var router = System.ServiceModel.Channels.MessageHeader.CreateHeader("routerID", "http://www.efwplus.cn/", AppGlobal.cache.GetData("routerID").ToString());
+                        OperationContext.Current.OutgoingMessageHeaders.Add(router);
+                        var cmd = System.ServiceModel.Channels.MessageHeader.CreateHeader("CMD", "http://www.efwplus.cn/", "Quit");
+                        OperationContext.Current.OutgoingMessageHeaders.Add(cmd);
+                        b = mWcfService.UnDomain(mClientID);
+                    }
+                    catch { }
                 }
             }
         }
@@ -231,7 +235,7 @@ namespace EFWCoreLib.WcfFrame.ClientController
                 }
                 catch (Exception err)
                 {
-                    throw new Exception(err.Message);
+                    //throw new Exception(err.Message);
                 }
             }
         }

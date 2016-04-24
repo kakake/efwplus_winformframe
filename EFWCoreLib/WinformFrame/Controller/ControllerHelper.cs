@@ -38,6 +38,7 @@ namespace EFWCoreLib.WinformFrame.Controller
                         for (int i = 0; i < wattr.ViewList.Count; i++)
                         {
                             IBaseViewBusiness view = (IBaseViewBusiness)System.Activator.CreateInstance(wattr.ViewList[i].ViewType);
+                            view.frmName = wattr.ViewList[i].Name;
                             viewDic.Add(wattr.ViewList[i].Name, view);
 
                             if (wattr.ViewList[i].IsDefaultView)

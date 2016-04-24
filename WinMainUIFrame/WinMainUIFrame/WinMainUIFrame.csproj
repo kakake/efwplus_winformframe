@@ -96,6 +96,7 @@
     <Compile Include="Entity\AbstractBaseGroupMenu.cs" />
     <Compile Include="Entity\AbstractBaseGroupUser.cs" />
     <Compile Include="Entity\AbstractBaseMenu.cs" />
+    <Compile Include="Entity\AbstractBaseMessage.cs" />
     <Compile Include="Entity\AbstractBaseModule.cs" />
     <Compile Include="Entity\AbstractBaseUser.cs" />
     <Compile Include="Entity\AbstractBaseWorkers.cs" />

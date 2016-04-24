@@ -17,6 +17,7 @@ using WinMainUIFrame.Winform.Common;
 using WinMainUIFrame.Winform.IView;
 using System.Xml;
 using System.Windows.Forms;
+using System.Data;
 
 namespace WinMainUIFrame.Winform.Controller
 {
@@ -306,23 +307,45 @@ namespace WinMainUIFrame.Winform.Controller
             //mstimer.Interval = 20000;
             mstimer.Enabled = true;
         }
+        
 
+        [WinformMethod]
         public void ShowMessageForm()
         {
             TaskbarForm.ShowForm((Form)frmmain);
         }
-         
+        */
 
+        [WinformMethod]
         public List<BaseMessage> GetNotReadMessages()
         {
-            return NewObject<EFWBaseLib.ObjectModel.SysMessage.Message>().GetNotReadMessages(GetSysLoginRight.UserId, GetSysLoginRight.DeptId, GetSysLoginRight.WorkId);
-        }
+            string strsql = @"select * from BaseMessage where (Limittime>getdate()) and MessageType in (
+																		select Code from BaseMessageType a where  (select count(1) from BaseGroupUser  where GroupId in (a.ReceiveGroup) and userId={0})>0
+																		)
+                                and (id not in (select messageid from BaseMessageRead where userid={0})) 
+                                and (ReceiveWork={2} or ReceiveWork=0)
+                                and (ReceiveDept={1} or ReceiveDept=0)
+                                and (ReceiveUser={0} or ReceiveUser=0)";
+            strsql = string.Format(strsql, LoginUserInfo.UserId, LoginUserInfo.DeptId, LoginUserInfo.WorkId);
 
+            DataTable dt = oleDb.GetDataTable(strsql);
+            if (dt.Rows.Count > 0)
+                return ConvertExtend.ToList<BaseMessage>(dt, oleDb, _container, _cache, _pluginName, null);
+            else
+                return new List<BaseMessage>();
+        }
+        [WinformMethod]
         public void MessageRead(int messageId)
         {
-            NewDao<EFWBaseLib.Dao.MessageDao>().MessageRead(messageId, GetSysLoginRight.UserId);
+            string strsql = "select count(*) from BaseMessageRead where messageid={0} and userid={1}";
+            strsql = string.Format(strsql, messageId, LoginUserInfo.UserId);
+            if (Convert.ToInt32(oleDb.GetDataResult(strsql)) == 0)
+            {
+                strsql = "insert into BaseMessageRead(messageid,userid,readtime) values(" + messageId + "," + LoginUserInfo.UserId + ",'" + DateTime.Now.Date.ToString() + "')";
+                oleDb.DoCommand(strsql);
+            }
         }
-         * */
+         
         #endregion
 
         [WinformMethod]

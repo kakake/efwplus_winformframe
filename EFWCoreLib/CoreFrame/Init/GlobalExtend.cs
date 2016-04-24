@@ -24,13 +24,15 @@ namespace EFWCoreLib.CoreFrame.Init
             {
                 comm.AppStartDo();
             }
-
-            foreach (ModulePlugin mp in AppPluginManage.PluginDic.Values)
+            if (AppPluginManage.PluginDic != null)
             {
-                comms = mp.container.ResolveAll<GlobalExtend>();
-                foreach (GlobalExtend comm in comms)
+                foreach (ModulePlugin mp in AppPluginManage.PluginDic.Values)
                 {
-                    comm.AppStartDo();
+                    comms = mp.container.ResolveAll<GlobalExtend>();
+                    foreach (GlobalExtend comm in comms)
+                    {
+                        comm.AppStartDo();
+                    }
                 }
             }
         }

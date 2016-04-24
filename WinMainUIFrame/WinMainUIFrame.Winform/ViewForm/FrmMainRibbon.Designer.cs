@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainRibbon));
             DevComponents.DotNetBar.Bar barRight;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMainRibbon));
+            this.rightContainer = new DevComponents.DotNetBar.PanelDockContainer();
+            this.dockContainerItem1 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockContainerItem2 = new DevComponents.DotNetBar.DockContainerItem();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
@@ -89,14 +91,14 @@
             this.barMainContainer = new DevComponents.DotNetBar.Bar();
             this.dockSite1 = new DevComponents.DotNetBar.DockSite();
             this.rightdockSite = new DevComponents.DotNetBar.DockSite();
-            this.rightContainer = new DevComponents.DotNetBar.PanelDockContainer();
-            this.dockContainerItem1 = new DevComponents.DotNetBar.DockContainerItem();
             this.dockSite8 = new DevComponents.DotNetBar.DockSite();
             this.dockSite5 = new DevComponents.DotNetBar.DockSite();
             this.dockSite6 = new DevComponents.DotNetBar.DockSite();
             this.dockSite7 = new DevComponents.DotNetBar.DockSite();
             this.dockSite3 = new DevComponents.DotNetBar.DockSite();
             barRight = new DevComponents.DotNetBar.Bar();
+            ((System.ComponentModel.ISupportInitialize)(barRight)).BeginInit();
+            barRight.SuspendLayout();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
@@ -104,9 +106,48 @@
             this.dockSite9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.barMainContainer)).BeginInit();
             this.rightdockSite.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(barRight)).BeginInit();
-            barRight.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // barRight
+            // 
+            barRight.AccessibleDescription = "DotNetBar Bar (barRight)";
+            barRight.AccessibleName = "DotNetBar Bar";
+            barRight.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar;
+            barRight.AutoSyncBarCaption = true;
+            barRight.CloseSingleTab = true;
+            barRight.Controls.Add(this.rightContainer);
+            barRight.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            barRight.GrabHandleStyle = DevComponents.DotNetBar.eGrabHandleStyle.Caption;
+            barRight.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.dockContainerItem1});
+            barRight.LayoutType = DevComponents.DotNetBar.eLayoutType.DockContainer;
+            barRight.Location = new System.Drawing.Point(3, 0);
+            barRight.Name = "barRight";
+            barRight.Size = new System.Drawing.Size(247, 544);
+            barRight.Stretch = true;
+            barRight.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            barRight.TabIndex = 0;
+            barRight.TabStop = false;
+            barRight.Text = "导航栏";
+            // 
+            // rightContainer
+            // 
+            this.rightContainer.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.rightContainer.Location = new System.Drawing.Point(3, 23);
+            this.rightContainer.Name = "rightContainer";
+            this.rightContainer.Size = new System.Drawing.Size(241, 518);
+            this.rightContainer.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.rightContainer.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
+            this.rightContainer.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
+            this.rightContainer.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
+            this.rightContainer.Style.GradientAngle = 90;
+            this.rightContainer.TabIndex = 0;
+            // 
+            // dockContainerItem1
+            // 
+            this.dockContainerItem1.Control = this.rightContainer;
+            this.dockContainerItem1.Name = "dockContainerItem1";
+            this.dockContainerItem1.Text = "导航栏";
             // 
             // dockContainerItem2
             // 
@@ -795,46 +836,6 @@
             this.rightdockSite.Text = "导航栏";
             this.rightdockSite.Visible = false;
             // 
-            // barRight
-            // 
-            barRight.AccessibleDescription = "DotNetBar Bar (barRight)";
-            barRight.AccessibleName = "DotNetBar Bar";
-            barRight.AccessibleRole = System.Windows.Forms.AccessibleRole.ToolBar;
-            barRight.AutoSyncBarCaption = true;
-            barRight.CloseSingleTab = true;
-            barRight.Controls.Add(this.rightContainer);
-            barRight.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            barRight.GrabHandleStyle = DevComponents.DotNetBar.eGrabHandleStyle.Caption;
-            barRight.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.dockContainerItem1});
-            barRight.LayoutType = DevComponents.DotNetBar.eLayoutType.DockContainer;
-            barRight.Location = new System.Drawing.Point(3, 0);
-            barRight.Name = "barRight";
-            barRight.Size = new System.Drawing.Size(247, 544);
-            barRight.Stretch = true;
-            barRight.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            barRight.TabIndex = 0;
-            barRight.TabStop = false;
-            // 
-            // rightContainer
-            // 
-            this.rightContainer.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.rightContainer.Location = new System.Drawing.Point(3, 23);
-            this.rightContainer.Name = "rightContainer";
-            this.rightContainer.Size = new System.Drawing.Size(241, 518);
-            this.rightContainer.Style.Alignment = System.Drawing.StringAlignment.Center;
-            this.rightContainer.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.rightContainer.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarDockedBorder;
-            this.rightContainer.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemText;
-            this.rightContainer.Style.GradientAngle = 90;
-            this.rightContainer.TabIndex = 0;
-            // 
-            // dockContainerItem1
-            // 
-            this.dockContainerItem1.Control = this.rightContainer;
-            this.dockContainerItem1.Name = "dockContainerItem1";
-            this.dockContainerItem1.Text = "导航栏";
-            // 
             // dockSite8
             // 
             this.dockSite8.AccessibleRole = System.Windows.Forms.AccessibleRole.Window;
@@ -907,6 +908,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMainRibbon_Load);
+            ((System.ComponentModel.ISupportInitialize)(barRight)).EndInit();
+            barRight.ResumeLayout(false);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
             this.ribbonPanel1.ResumeLayout(false);
@@ -915,8 +918,6 @@
             this.dockSite9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.barMainContainer)).EndInit();
             this.rightdockSite.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(barRight)).EndInit();
-            barRight.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

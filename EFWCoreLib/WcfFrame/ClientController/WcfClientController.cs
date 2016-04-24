@@ -139,6 +139,8 @@ namespace EFWCoreLib.WcfFrame.ClientController
             {
                 //记录错误日志
                 EFWCoreLib.CoreFrame.EntLib.ZhyContainer.CreateException().HandleException(err, "HISPolicy");
+                if(err.InnerException!=null)
+                    throw new Exception(err.InnerException.Message);
                 throw new Exception(err.Message);
             }
         }

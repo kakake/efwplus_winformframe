@@ -1,0 +1,202 @@
+----------------------------------------
+Timestamp: 2016-03-18 03:12:12
+
+Message: HandlingInstanceID: ec621928-04d6-4ea6-9f64-0eaa0a11d250
+An exception of type 'System.Exception' occurred and was caught.
+----------------------------------------------------------------
+03/18/2016 11:12:12
+Type : System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : 控制器中没有此方法名
+Source : EFWCoreLib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Reflection.MethodInfo CreateMethodInfo(System.String, System.String)
+HResult : -2146233088
+Stack Trace :    在 EFWCoreLib.WinformFrame.Controller.ControllerHelper.CreateMethodInfo(String controllername, String methodname) 位置 d:\工作台\efwplus_winformframe\EFWCoreLib\WinformFrame\Controller\ControllerHelper.cs:行号 81
+
+Additional Info:
+
+MachineName : UALG394S3SBEXSU
+TimeStamp : 2016-03-18 03:12:12
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : EFWWin.vshost.exe
+ThreadIdentity : 
+WindowsIdentity : UALG394S3SBEXSU\Administrator
+
+
+Category: FileLog
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: UALG394S3SBEXSU
+
+App Domain: EFWWin.vshost.exe
+
+ProcessId: 7228
+
+Process Name: D:\工作台\efwplus_winformframe\Output\EFWWin.vshost.exe
+
+Thread Name: 
+
+Win32 ThreadId:5676
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2016-03-18 03:12:12
+
+Message: HandlingInstanceID: 58fcd873-ec1a-4676-99bc-21aa8e6fa54f
+An exception of type 'System.Exception' occurred and was caught.
+----------------------------------------------------------------
+03/18/2016 11:12:12
+Type : System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : 控制器中没有此方法名
+Source : EFWCoreLib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Reflection.MethodInfo CreateMethodInfo(System.String, System.String)
+HResult : -2146233088
+Stack Trace :    在 EFWCoreLib.WinformFrame.Controller.ControllerHelper.CreateMethodInfo(String controllername, String methodname) 位置 d:\工作台\efwplus_winformframe\EFWCoreLib\WinformFrame\Controller\ControllerHelper.cs:行号 101
+   在 EFWCoreLib.WinformFrame.Controller.WinformController.UI_ControllerEvent(String eventname, Object[] objs) 位置 d:\工作台\efwplus_winformframe\EFWCoreLib\WinformFrame\Controller\WinformController.cs:行号 135
+
+Additional Info:
+
+MachineName : UALG394S3SBEXSU
+TimeStamp : 2016-03-18 03:12:12
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : EFWWin.vshost.exe
+ThreadIdentity : 
+WindowsIdentity : UALG394S3SBEXSU\Administrator
+
+
+Category: FileLog
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: UALG394S3SBEXSU
+
+App Domain: EFWWin.vshost.exe
+
+ProcessId: 7228
+
+Process Name: D:\工作台\efwplus_winformframe\Output\EFWWin.vshost.exe
+
+Thread Name: 
+
+Win32 ThreadId:5676
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2016-03-18 03:13:47
+
+Message: HandlingInstanceID: 739137fc-b43e-4ecd-a3d4-07aff36fa6ad
+An exception of type 'System.Exception' occurred and was caught.
+----------------------------------------------------------------
+03/18/2016 11:13:47
+Type : System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : 控制器中没有此方法名
+Source : EFWCoreLib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Reflection.MethodInfo CreateMethodInfo(System.String, System.String)
+HResult : -2146233088
+Stack Trace :    在 EFWCoreLib.WinformFrame.Controller.ControllerHelper.CreateMethodInfo(String controllername, String methodname) 位置 d:\工作台\efwplus_winformframe\EFWCoreLib\WinformFrame\Controller\ControllerHelper.cs:行号 81
+
+Additional Info:
+
+MachineName : UALG394S3SBEXSU
+TimeStamp : 2016-03-18 03:13:47
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : EFWWin.vshost.exe
+ThreadIdentity : 
+WindowsIdentity : UALG394S3SBEXSU\Administrator
+
+
+Category: FileLog
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: UALG394S3SBEXSU
+
+App Domain: EFWWin.vshost.exe
+
+ProcessId: 6748
+
+Process Name: D:\工作台\efwplus_winformframe\Output\EFWWin.vshost.exe
+
+Thread Name: 
+
+Win32 ThreadId:3148
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 2016-03-18 03:13:47
+
+Message: HandlingInstanceID: 0a1dc618-c6c0-4993-a054-7dd50e2e56fc
+An exception of type 'System.Exception' occurred and was caught.
+----------------------------------------------------------------
+03/18/2016 11:13:47
+Type : System.Exception, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : 控制器中没有此方法名
+Source : EFWCoreLib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Reflection.MethodInfo CreateMethodInfo(System.String, System.String)
+HResult : -2146233088
+Stack Trace :    在 EFWCoreLib.WinformFrame.Controller.ControllerHelper.CreateMethodInfo(String controllername, String methodname) 位置 d:\工作台\efwplus_winformframe\EFWCoreLib\WinformFrame\Controller\ControllerHelper.cs:行号 101
+   在 EFWCoreLib.WinformFrame.Controller.WinformController.UI_ControllerEvent(String eventname, Object[] objs) 位置 d:\工作台\efwplus_winformframe\EFWCoreLib\WinformFrame\Controller\WinformController.cs:行号 135
+
+Additional Info:
+
+MachineName : UALG394S3SBEXSU
+TimeStamp : 2016-03-18 03:13:47
+FullName : Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+AppDomainName : EFWWin.vshost.exe
+ThreadIdentity : 
+WindowsIdentity : UALG394S3SBEXSU\Administrator
+
+
+Category: FileLog
+
+Priority: 0
+
+EventId: 100
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: UALG394S3SBEXSU
+
+App Domain: EFWWin.vshost.exe
+
+ProcessId: 6748
+
+Process Name: D:\工作台\efwplus_winformframe\Output\EFWWin.vshost.exe
+
+Thread Name: 
+
+Win32 ThreadId:3148
+
+Extended Properties: 
+----------------------------------------

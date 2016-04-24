@@ -22,7 +22,7 @@ namespace EFWCoreLib.CoreFrame.Business
         /// 控制器事件
         /// </summary>
         //event ControllerEventHandler ControllerEvent;
-
+        string frmName { get; set; }
         ControllerEventHandler InvokeController { get; set; }
     }
 }
